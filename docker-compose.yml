@@ -1,0 +1,43 @@
+services:
+  # Database Service running Postgres 16 with pgvector extension
+  db:
+    image: pgvector/pgvector:16-pg16
+    container_name: recruitbot_db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-recruitbot_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-recruitbot_password}
+      POSTGRES_DB: ${POSTGRES_DB:-recruitbot_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-recruitbot_user} -d ${POSTGRES_DB:-recruitbot_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: recruitbot_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-recruitbot_user}:${POSTGRES_PASSWORD:-recruitbot_password}@db:5432/${POSTGRES_DB:-recruitbot_db}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - VOYAGE_API_KEY=${VOYAGE_API_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - DEBUG=${DEBUG:-true}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+
+volumes:
+  postgres_data:
