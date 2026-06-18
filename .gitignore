@@ -24,3 +24,7 @@ Thumbs.db
 
 # Gemini
 .gemini
+# Log files
+*.log
+backend.log
+frontend.log
