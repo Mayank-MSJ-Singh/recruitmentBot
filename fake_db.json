@@ -1,0 +1,278 @@
+{
+  "employees": [
+    {
+      "id": "EMP_001",
+      "name": "Arjun Desai",
+      "role": "Senior Sales Agent",
+      "tenure_years": 4.5,
+      "previous_industry": "Pharma Sales",
+      "education": "B.Sc Pharmacy",
+      "key_skills": ["Consultative Selling", "Field Operations", "Relationship Management"],
+      "performance_rating": 9.5,
+      "professional_summary": "Highly motivated sales professional with a background in pharmaceuticals. Excels at complex technical explanations and relationship building."
+    },
+    {
+      "id": "EMP_002",
+      "name": "Neha Kapoor",
+      "role": "Sales Lead",
+      "tenure_years": 3.2,
+      "previous_industry": "High-end Hospitality",
+      "education": "BA Hotel Management",
+      "key_skills": ["Client Onboarding", "CRM", "HNI Sales"],
+      "performance_rating": 8.8,
+      "professional_summary": "Dynamic client manager transitioning from luxury hotel services. Exceptional communication clarity, focus on details, and consistent target achievement."
+    },
+    {
+      "id": "EMP_003",
+      "name": "Karan Singh",
+      "role": "Sales Manager",
+      "tenure_years": 5.1,
+      "previous_industry": "Retail Banking",
+      "education": "B.Com",
+      "key_skills": ["Financial Literacy", "Cross-selling", "Team Leadership"],
+      "performance_rating": 9.0,
+      "professional_summary": "Numbers-driven closer with extensive banking and financial products experience. Strong leadership skills and team coaching abilities."
+    },
+    {
+      "id": "EMP_004",
+      "name": "Aisha Rahman",
+      "role": "Senior Relationship Manager",
+      "tenure_years": 3.8,
+      "previous_industry": "Direct Sales / Telecom",
+      "education": "MBA Marketing",
+      "key_skills": ["B2C Marketing", "Customer Retention", "Negotiation"],
+      "performance_rating": 9.8,
+      "professional_summary": "Extremely persistent relationship manager who excels under pressure. High empathy and a listening-first approach to sales closing."
+    },
+    {
+      "id": "EMP_005",
+      "name": "Vikram Malhotra",
+      "role": "Key Account Manager",
+      "tenure_years": 4.2,
+      "previous_industry": "Consumer Durables",
+      "education": "BBA",
+      "key_skills": ["Corporate Gifting", "Distributor Relations", "Deal Closing"],
+      "performance_rating": 8.5,
+      "professional_summary": "Proactive distributor liaison with strong business development skills in consumer goods."
+    },
+    {
+      "id": "EMP_006",
+      "name": "Rohan Mehra",
+      "role": "Sales Agent",
+      "tenure_years": 1.5,
+      "previous_industry": "Retail Sales",
+      "education": "B.Sc",
+      "key_skills": ["Product Demo", "Lead Intake", "Customer Assistance"],
+      "performance_rating": 6.2,
+      "professional_summary": "Junior sales representative handling basic walk-in and digital inquiries. Needs guidance on closing strategies."
+    },
+    {
+      "id": "EMP_007",
+      "name": "Sanya Sen",
+      "role": "Account Executive",
+      "tenure_years": 2.1,
+      "previous_industry": "Insurance Broking",
+      "education": "BBA",
+      "key_skills": ["Lead Qualification", "Cold Calling", "Email Pitching"],
+      "performance_rating": 7.5,
+      "professional_summary": "Steady performer managing lead generation activity. Strong cold outreach skills but working on improve close rates."
+    },
+    {
+      "id": "EMP_008",
+      "name": "Kabir Mathur",
+      "role": "Sales Executive",
+      "tenure_years": 0.8,
+      "previous_industry": "Real Estate Brokerage",
+      "education": "BA English",
+      "key_skills": ["Site Visits", "Negotiation", "Client Follow-ups"],
+      "performance_rating": 5.5,
+      "professional_summary": "Recently joined sales agent with background in high-value properties. Still adjusting to corporate sales structures."
+    },
+    {
+      "id": "EMP_009",
+      "name": "Priya Nair",
+      "role": "Relationship Manager",
+      "tenure_years": 2.9,
+      "previous_industry": "Pharma Sales",
+      "education": "B.Pharm",
+      "key_skills": ["Technical Consultation", "Distributor Engagement", "Territory Management"],
+      "performance_rating": 9.2,
+      "professional_summary": "Top-tier relationship manager with strong technical expertise in pharmaceuticals. Highly effective territory growth."
+    },
+    {
+      "id": "EMP_010",
+      "name": "Rahul Verma",
+      "role": "Sales Representative",
+      "tenure_years": 1.2,
+      "previous_industry": "Automobile Dealership",
+      "education": "Diploma Engineering",
+      "key_skills": ["Showroom Sales", "Upselling", "Test Drive Management"],
+      "performance_rating": 4.8,
+      "professional_summary": "Showroom floor salesman with technical automotive background. Lower conversions on corporate sales targets."
+    },
+    {
+      "id": "EMP_011",
+      "name": "Kavita Reddy",
+      "role": "Account Manager",
+      "tenure_years": 3.0,
+      "previous_industry": "IT Services",
+      "education": "B.Tech CSE",
+      "key_skills": ["SaaS Selling", "Key Account Management", "Technical Pitching"],
+      "performance_rating": 8.7,
+      "professional_summary": "Highly structured manager looking after software accounts. Excels at retention and upselling technical products."
+    },
+    {
+      "id": "EMP_012",
+      "name": "Deepak Joshi",
+      "role": "Sales Agent",
+      "tenure_years": 2.5,
+      "previous_industry": "Consumer Finance",
+      "education": "BBA",
+      "key_skills": ["Direct Sales", "Loan Sourcing", "Customer Care"],
+      "performance_rating": 6.9,
+      "professional_summary": "Direct loan sales agent with steady performance but needs improvement on cross-selling ratios."
+    },
+    {
+      "id": "EMP_013",
+      "name": "Shalini Mishra",
+      "role": "Senior Relationship Manager",
+      "tenure_years": 4.1,
+      "previous_industry": "Retail Banking",
+      "education": "MBA Finance",
+      "key_skills": ["Wealth Management", "Investment advisory", "HNI Client Relations"],
+      "performance_rating": 9.4,
+      "professional_summary": "Expert relationship manager focused on high-net-worth clients. Outstanding target achievement records."
+    },
+    {
+      "id": "EMP_014",
+      "name": "Aditya Roy",
+      "role": "Sales Specialist",
+      "tenure_years": 1.8,
+      "previous_industry": "Telecom Sales",
+      "education": "B.Sc Physics",
+      "key_skills": ["Corporate Connections", "Cold Calling", "B2B Negotiations"],
+      "performance_rating": 7.2,
+      "professional_summary": "Active enterprise sales specialist with decent pipeline. Highly organized with follow-ups."
+    },
+    {
+      "id": "EMP_015",
+      "name": "Meera Chawla",
+      "role": "Key Account Manager",
+      "tenure_years": 3.5,
+      "previous_industry": "Advertising / Media",
+      "education": "BA Mass Comm",
+      "key_skills": ["Media Sales", "Campaign Execution", "Client Onboarding"],
+      "performance_rating": 8.9,
+      "professional_summary": "Dynamic media planner transitioned to account management. Creative problem-solver with excellent communication."
+    },
+    {
+      "id": "EMP_016",
+      "name": "Varun Malhotra",
+      "role": "Field Executive",
+      "tenure_years": 0.5,
+      "previous_industry": "Logistics",
+      "education": "B.Com",
+      "key_skills": ["Field Sourcing", "Merchant Acquisition", "Local Operations"],
+      "performance_rating": 5.0,
+      "professional_summary": "Entry-level executive adjusting to merchant acquisition workflows. Performance is currently average."
+    },
+    {
+      "id": "EMP_017",
+      "name": "Ananya Rao",
+      "role": "Sales Lead",
+      "tenure_years": 4.8,
+      "previous_industry": "Pharma Sales",
+      "education": "B.Pharm",
+      "key_skills": ["B2B Pharma Sales", "Distributor Management", "Key Accounts"],
+      "performance_rating": 9.6,
+      "professional_summary": "High-performing pharma leader with strong connections in major medical networks. Proven ability to open new territories."
+    },
+    {
+      "id": "EMP_018",
+      "name": "Sameer Sheikh",
+      "role": "Relationship Executive",
+      "tenure_years": 1.1,
+      "previous_industry": "Real Estate Brokerage",
+      "education": "B.Com",
+      "key_skills": ["Client Showings", "Negotiation", "CRM Update"],
+      "performance_rating": 6.0,
+      "professional_summary": "Executive focused on property listing and walkthroughs. Needs coaching on commercial leases."
+    },
+    {
+      "id": "EMP_019",
+      "name": "Kriti Sharma",
+      "role": "Sales Coordinator",
+      "tenure_years": 2.2,
+      "previous_industry": "Hospitality Sourcing",
+      "education": "B.Sc Hotel Management",
+      "key_skills": ["Vendor Coordination", "CRM Systems", "Lead Assignment"],
+      "performance_rating": 7.8,
+      "professional_summary": "Coordinates daily leads and coordinates customer scheduling efficiently. Strong back-office support capability."
+    },
+    {
+      "id": "EMP_020",
+      "name": "Amit Saxena",
+      "role": "Senior Sales Agent",
+      "tenure_years": 5.0,
+      "previous_industry": "Direct Sales / Telecom",
+      "education": "BBA",
+      "key_skills": ["Direct Sales", "Channel Management", "Team Training"],
+      "performance_rating": 9.1,
+      "professional_summary": "Top-producing telecommunications sales professional with 5 years experience in retail and channel partner sales."
+    }
+  ],
+  "finalists_not_selected": [
+    {
+      "id": "FIN_001",
+      "name": "Pooja Sharma",
+      "role_applied": "Sales Lead",
+      "previous_interview_date": "2025-11-15",
+      "education": "MBA Marketing",
+      "experience_years": 3,
+      "previous_industry": "Pharma Sales",
+      "key_skills": ["Consultative Selling", "Territory Management", "Key Accounts"],
+      "overall_interview_rating": 8.5,
+      "reason_for_rejection": "Strong profile but role was offered to another finalist with slightly more senior leadership experience.",
+      "professional_summary": "A high-performance pharma sales specialist with experience managing multi-city distributor networks."
+    },
+    {
+      "id": "FIN_002",
+      "name": "Anil Gupta",
+      "role_applied": "Senior Relationship Manager",
+      "previous_interview_date": "2025-12-01",
+      "education": "BBA",
+      "experience_years": 4,
+      "previous_industry": "Direct Sales / Telecom",
+      "key_skills": ["Customer Retention", "Negotiation", "B2C Sales"],
+      "overall_interview_rating": 8.0,
+      "reason_for_rejection": "Exceeded budget expectations at the time; candidate was unwilling to compromise on CTC.",
+      "professional_summary": "Direct sales specialist with structured follow-up tactics. Consistent record of high call volume conversions."
+    },
+    {
+      "id": "FIN_003",
+      "name": "Sneha Iyer",
+      "role_applied": "Sales Manager",
+      "previous_interview_date": "2026-02-10",
+      "education": "B.Com",
+      "experience_years": 5,
+      "previous_industry": "Retail Banking",
+      "key_skills": ["Financial Literacy", "Cross-selling", "Team Leadership"],
+      "overall_interview_rating": 8.2,
+      "reason_for_rejection": "Headcount requisition got freeze by finance right at the final offer approval stage.",
+      "professional_summary": "Branch sales manager with retail banking and lending products background. Strong portfolio acquisition history."
+    },
+    {
+      "id": "FIN_004",
+      "name": "Rohan Mehra",
+      "role_applied": "B2C Sales Specialist",
+      "previous_interview_date": "2026-03-05",
+      "education": "B.Sc",
+      "experience_years": 2,
+      "previous_industry": "High-end Hospitality",
+      "key_skills": ["Client Onboarding", "CRM", "HNI Sales"],
+      "overall_interview_rating": 7.8,
+      "reason_for_rejection": "Strong communication, but lacked the specific field-selling resilience required for key accounts.",
+      "professional_summary": "Hospitality guest relationship specialist looking to pivot into corporate sales. High focus on empathy and customer satisfaction."
+    }
+  ]
+}
