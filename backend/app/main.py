@@ -18,6 +18,8 @@ load_dotenv(dotenv_path="../../.env")
 
 settings = get_settings()
 
+from app.core.database import engine
+from app.services.llm import llm_gateway
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -28,13 +30,26 @@ async def lifespan(app: FastAPI):
     """
     # ── Startup ──
     print(f"🚀 {settings.APP_NAME} v{settings.APP_VERSION} starting up...")
-    # TODO (Sprint 0.2): Initialize database connection pool
-    # TODO (Sprint 0.3): Initialize LLM Gateway client
+    # (Sprint 0.2): Initialize database connection pool
+    # Engine is initialized in core.database, ping to check
+    try:
+        async with engine.begin() as conn:
+            from sqlalchemy import text
+            await conn.execute(text("SELECT 1"))
+        print("✅ Database connection established.")
+    except Exception as e:
+        print(f"❌ Database connection failed: {e}")
+
+    # (Sprint 0.3): Initialize LLM Gateway client
+    # Trigger initialization or logging if needed
+    print(f"✅ LLM Gateway initialized with default premium model: {llm_gateway.model_premium}")
+
     # TODO (Sprint 0.4): Initialize auth provider
     yield
     # ── Shutdown ──
     print(f"👋 {settings.APP_NAME} shutting down...")
-    # TODO: Close DB pool, flush telemetry, etc.
+    await engine.dispose()
+    print("✅ Database connection pool closed.")
 
 
 app = FastAPI(

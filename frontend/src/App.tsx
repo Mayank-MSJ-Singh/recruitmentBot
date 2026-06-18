@@ -4,6 +4,11 @@ interface HealthStatus {
   status: string
   service: string
   timestamp: string
+  components?: {
+    database: { status: string }
+    llm_gateway: { status: string }
+    redis: { status: string }
+  }
 }
 
 function App() {
@@ -11,7 +16,7 @@ function App() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/api/v1/health')
+    fetch('/api/v1/health/detailed')
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         return res.json()
@@ -84,19 +89,33 @@ function App() {
           {/* Database Status */}
           <div className="flex items-center justify-between py-3 px-4 rounded-lg bg-surface-700/50">
             <span className="text-text-secondary text-sm">Database (PostgreSQL)</span>
-            <span className="inline-flex items-center gap-1.5 text-text-muted text-sm font-medium">
-              <span className="w-2 h-2 rounded-full bg-surface-400" />
-              Phase 0.2
-            </span>
+            {health?.components?.database ? (
+              <span className={`inline-flex items-center gap-1.5 text-sm font-medium ${health.components.database.status === 'connected' ? 'text-success' : 'text-error'}`}>
+                <span className={`w-2 h-2 rounded-full ${health.components.database.status === 'connected' ? 'bg-success' : 'bg-error'}`} />
+                {health.components.database.status === 'connected' ? 'Connected' : 'Error'}
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 text-text-muted text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-surface-400" />
+                Phase 0.2
+              </span>
+            )}
           </div>
 
           {/* LLM Status */}
           <div className="flex items-center justify-between py-3 px-4 rounded-lg bg-surface-700/50">
             <span className="text-text-secondary text-sm">LLM Gateway (Claude)</span>
-            <span className="inline-flex items-center gap-1.5 text-text-muted text-sm font-medium">
-              <span className="w-2 h-2 rounded-full bg-surface-400" />
-              Phase 0.3
-            </span>
+            {health?.components?.llm_gateway ? (
+              <span className={`inline-flex items-center gap-1.5 text-sm font-medium ${health.components.llm_gateway.status === 'configured' ? 'text-success' : 'text-error'}`}>
+                <span className={`w-2 h-2 rounded-full ${health.components.llm_gateway.status === 'configured' ? 'bg-success' : 'bg-error'}`} />
+                {health.components.llm_gateway.status === 'configured' ? 'Configured' : 'Not Configured'}
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 text-text-muted text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-surface-400" />
+                Phase 0.3
+              </span>
+            )}
           </div>
         </div>
 
